@@ -1,0 +1,32 @@
+#wrapper
+{
+	width:960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+footer
+{
+	width: 960px;
+	height: 75px;
+	clear: both;
+	background: green;
+}
+
+
+
+aside
+{
+	width: 150px;
+	height: 800px;
+	float: left;
+	background: aqua;
+}
+
+section
+{
+	width: 810px;
+	height: 750px;
+	float: right;
+	background: red;
+}
