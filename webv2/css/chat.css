@@ -36,3 +36,8 @@
 .msg_head{
     position: relative;
 }
+
+.scroll {
+    max-height: 28rem;
+    overflow-y: auto;
+}
