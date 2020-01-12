@@ -2,55 +2,63 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="style.css" type="txt/css">
-    <style type="text/css">
+	<link rel="stylesheet" href="style.css" type="txt/css">
+	
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        #content {
-            position: absolute;
-			height: 500px;
-			width: 800px;
-            left: 50%;
-            top: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            background-color: #EEF2BA
-        }
-		#login{
-		
-			position: absolute;
-			left: 30%;
-            top: 40%;
-		}
-		button{
-			background-color: #EFFC5E;
-			font-size: 24px;
-			font-family: "Times New Roman", Times, serif;
-		}
-		table{
-			border: 1px solid black;
-			background-color: #FCFA5D;
-		}
-		input{
-			font-size:24px;
-		}
-		#welcome{
-			margin-left: 20px;
-			margin-top: 20px;
-		}
-    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Login - Student</title>
 </head>
 
 <body>
-    <div id="content">
-		<div id="welcome">
-			<h1>Welcome to DJHZJ!</h1>
-			<h2>The platform that allows students to get help from tutors</h2><br><br><br><br>
-		</div>
-		<div id="login">
-		<table><tr><th>
-			<input type="text" placeholder="email adress"><br>
-			<input type="password" placeholder="password"><br><br>
-			<button id="student" onclick="window.location.href = 'studentProfile.html';">LOG IN</button>
-		</th></tr><table>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">DJHZJ</a>
+	</nav>
+  
+  
+	<div class="container-fluid content">
+		<div class="row justify-content-center">
+			<div class="col col-md-12 text-center" id="welcome">
+				<h1>Welcome to DJHZJ!</h1>
+				<h2>The platform that allows students to get help from tutors</h2>
+			</div>
+			<div class="col col-md-4 mt-5" id="login">
+				<div class="card">
+					<form>
+						<div class="card-header">
+							<h5>Login - Student</h5>
+						</div>
+						<div class="card-body">
+							<p>You are tutor? <a href="loggInTutor.html">click here</a></p>
+							<div class="form-group">
+							  <label for="exampleInputEmail1">Email address</label>
+							  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+							<div class="form-group">
+							  <label for="exampleInputPassword1">Password</label>
+							  <input type="password" class="form-control" id="exampleInputPassword1">
+							</div>
+							<div class="form-group form-check">
+							  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+							  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+							
+						</div>
+						
+					</form>
+					<div class="card-footer">
+						<button class="btn btn-primary" onclick="window.location.href = 'studentProfile.html';">login</button>
+					</div>
+				</div>
+				
+				
+			</div>
 		</div>
     </div>
 </body>
