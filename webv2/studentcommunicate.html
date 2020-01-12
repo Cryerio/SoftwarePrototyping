@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action">
+              <button type="button" class="list-group-item list-group-item-action" disabled>
                 Profile
               </button>
               <button type="button" class="list-group-item list-group-item-action active" disabled>Queue</button>
@@ -30,7 +30,7 @@
             </div>
           </div>
         
-        <div class="col-md-6" id="cardfield">
+        <div class="col-md-7" id="cardfield">
           <div class="card" id="cardScroll">
             <h5 class="card-header">chat</h5>
             <div class="card-body msg_card_body cardScroll" id="msg_field" style=" height: 28rem;">
@@ -59,28 +59,30 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="row">
-            <div class="text-center">
-                <img src="figureicon-01.png" class="rounded mx-auto d-block" alt="..." />
-            </div>
-          </div>
-          <div class="row p-4" >
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary">screensharing</button>
-                <button type="button" class="btn btn-primary">audiocall</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Info</h5>
-                  <p class="card-text">tutor@gmail.com</p>
-                </div>
+        <div class="col-md-2">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                  <img src="figureicon-01.png" class="rounded mx-auto d-block" alt="..." width="100%" />
               </div>
-          </div>
-          <div class="row justify-content-center p-4">
-            <buttontype="button" class="btn btn-outline-primary">exit</button>
+            </div>
+            <div class="row mt-4 justify-content-center">
+              <div class="col col-md-8 btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary"><i class="fas fa-desktop"></i></button>
+                  <button type="button" class="btn btn-primary"><i class="fas fa-phone-square"></i></button>
+              </div>
+            </div>
+            <div class="row mt-4 justify-content-center">
+              <div class="col col-md-12 card">
+                  <div class="card-body">
+                    <h5 class="card-title">Info</h5>
+                    <p class="card-text">tutor@gmail.com</p>
+                  </div>
+                </div>
+            </div>
+            <div class="row justify-content-center p-4">
+              <a href="queue.html" type="button" class="btn btn-outline-primary">exit</a>
+            </div>
           </div>
       </div>
       
