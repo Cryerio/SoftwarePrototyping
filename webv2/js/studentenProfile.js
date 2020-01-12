@@ -5,4 +5,5 @@ $(function() {
     $('#close-alert').click(function() {
         $(".alert").hide();
     });
+
 });
