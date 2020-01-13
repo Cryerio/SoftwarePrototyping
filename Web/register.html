@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="txt/css">
+    <style type="text/css">
+
+        #content {
+            position: absolute;
+			height: 500px;
+			width: 800px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background-color: #EEF2BA
+        }
+		#welcome{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		#registrationFormDiv{		
+			position: absolute;
+			left: 35%;
+            top: 25%;
+		}
+		table{
+			border: 1px solid black;
+			text-align: left;
+			width: 250px;
+			font-size: 18px;
+			background-color: #FCFA5D;
+		}
+		button{
+			font-size: 20px;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="welcome">
+			<h1>Welcome to DJHZJ!</h1>
+			<h2>The platform that allows students to get help from tutors</h2><br><br>
+		</div>
+		<div id="registrationFormDiv">
+			<table><tr><th>
+			<form id="registrationForm">
+				E-mail adress:<br>
+				<input type="text" name="email"><br>
+				First name:<br>
+				<input type="text" name="firstname"><br>
+				Last name:<br>
+				<input type="text" name="lastname"><br>
+				Username:<br>
+				<input type="text" name="username"><br>
+				Password:<br>
+				<input type="password" name="password"><br>
+				Confirm password:<br>
+				<input type="password" name="confpassword"><br><br>
+				<input type="radio" name="role" value="tutor"/> Tutor<br>
+				<input type="radio" name="role" value="student"/> Student<br><br>
+			</form>
+			<button onclick="window.location.href = 'registrationSuccess.html';">Register</button>
+			</th></tr></table>
+		</div>
+    </div>
+</body>
+
+</html>
