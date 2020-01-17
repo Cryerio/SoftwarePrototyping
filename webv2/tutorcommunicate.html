@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/chat.css">
-    <title>studentcommunicate</title>
+    <title>tutorcommunicate</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,7 +25,7 @@
               <button type="button" class="list-group-item list-group-item-action" disabled>
                 Profile
               </button>
-              <button type="button" class="list-group-item list-group-item-action active">Queue</button>
+              <button type="button" class="list-group-item list-group-item-action active">Session</button>
               <button type="button" class="list-group-item list-group-item-action" disabled>Q&A</button>
               <button type="button" class="list-group-item list-group-item-action" disabled>Log out</button>
             </div>
@@ -37,12 +37,12 @@
             <h5 class="card-header">chat</h5>
             <div class="card-body msg_card_body scroll" id="msg_field" style=" height: 28rem;">
                 <div class="d-flex justify-content-start mb-4">
-                    <div class="msg_cotainer">
+                    <div class="msg_cotainer_send">
                         Hi, how are you samim?
                     </div>
                 </div>
                 <div class="d-flex justify-content-end mb-4">
-                    <div class="msg_cotainer_send">
+                    <div class="msg_cotainer">
                         Hi Khalid i am good tnx how about you?
                     </div>
                 </div>
@@ -78,12 +78,17 @@
               <div class="col col-md-12 card">
                   <div class="card-body">
                     <h5 class="card-title">Info</h5>
-                    <p class="card-text">tutor@gmail.com</p>
+                    <p class="card-text">student@gmail.com</p>
                   </div>
                 </div>
             </div>
             <div class="row justify-content-center p-4" >
-              <a href="queue.html" type="button" class="btn btn-outline-primary" id="exit">exit</a>
+              <div class="col col-md-6">
+                <button class="btn btn-outline-primary" id="next">next</button>
+              </div>
+              <div class="col col-md-6">
+                <a href="tutorProfile.html" type="button" class="btn btn-outline-primary" id="exit">exit</a>
+              </div>
             </div>
 
           </div>
