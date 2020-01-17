@@ -12,11 +12,14 @@ $(function() {
 
 
     $("#exit").click( function() {
-        confirm('Are you sure you want leave the queue?');  
+        if(confirm('Are you sure you want leave the queue?')) {
+            window.location.href = "queue.html";
+            return false;
+        }
     });
     
     $("#next").click(function(){
-        //todo to next student
+        $("#msg_field").empty();
     });
 });
 
