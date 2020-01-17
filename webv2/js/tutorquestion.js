@@ -14,7 +14,7 @@ $(function() {
         collbtn.setAttribute('data-toggle',"collapse");
         collbtn.setAttribute('data-target',"#collapse"+ count);
         collbtn.setAttribute('aria-controls',"collapse"+ count);
-        collbtn.innerHTML = "Assignment" + count;
+        collbtn.innerHTML = "Assignment " + count;
         cardtitle.appendChild(collbtn);
         cardheader.appendChild(cardtitle);
 
