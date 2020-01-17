@@ -1,0 +1,180 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <title>studentcommunicate</title>
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 300px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <script>
+          function popUpFiles() {
+              var modal = document.getElementById("myModal");
+              modal.style.display = "block";
+          }
+
+          function closePopUpFiles() {
+              var modal = document.getElementById("myModal");
+              modal.style.display = "none";
+          }
+
+          function chooseFiles() {
+              var modal = document.getElementById("myModal");
+              var nameValue = document.getElementById("fileName").value;
+              document.getElementById("msgfield").value = nameValue;
+              modal.style.display = "none";
+              //textField = nameValue;
+          }
+
+    </script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">DJHZJ</a>
+    </nav>
+
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action" disabled>
+                        Profile
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action active">Queue</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Q&A</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Log out</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-7" id="cardfield" style=" height: 35rem;">
+                <div class="card" id="cardScroll">
+                    <h5 class="card-header">chat</h5>
+                    <div class="card-body msg_card_body scroll" id="msg_field" style=" height: 28rem;">
+                        <div class="d-flex justify-content-start mb-4">
+                            <div class="msg_cotainer">
+                                Hi, how are you samim?
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mb-4">
+                            <div class="msg_cotainer_send">
+                                Hi Khalid i am good tnx how about you?
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                                <!--<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>--> <!--here attach-->
+                                <button type="button" class="list-group-item list-group-item-action" onclick="popUpFiles()"><i class="fas fa-paperclip"></i></button>
+                            </div>
+                            <textarea name="" class="form-control type_msg" id="msgfield" placeholder="Type your message..."></textarea>
+                            <div class="input-group-append">
+                                <span class="input-group-text send_btn" id="sendbutton"><i class="fas fa-location-arrow"></i></span>
+                            </div>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal" display="none">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" onclick="closePopUpFiles()">&times;</span>
+                                <h4>Write a name of the file that you want to attach</h4>
+                                <form method="post">
+                                    <input type="text" name="name" id="fileName" value="value" />
+                                    <input type="button" value="Open" onclick="chooseFiles()" />
+                                    <!--<input type="checkbox" name="vehicle1" value="Bike"> file1.cpp<br>
+                                    <input type="checkbox" name="vehicle2" value="Car"> file2.cpp<br>
+                                    <input type="checkbox" name="vehicle3" value="Boat"> file3.cpp<br><br>
+                                    <input type="button" name="Open" value="Verify Credit Card" onclick="isValidCreditCard(document.getElementById('cctextboxid').value,document.getElementById('cardtypeid').value)" />-->
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col text-center">
+                            <img src="figureicon-01.png" class="rounded mx-auto d-block" alt="..." width="100%" />
+                        </div>
+                    </div>
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col col-md-8 btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-primary"><i class="fas fa-desktop"></i></button>
+                            <button type="button" class="btn btn-primary" onclick="file:///+ " home/user/Desktop""><i class="fas fa-phone-square"></i></button>
+                        </div>
+                    </div>
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col col-md-12 card">
+                            <div class="card-body">
+                                <h5 class="card-title">Info</h5>
+                                <p class="card-text">tutor@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center p-4">
+                        <a href="queue.html" type="button" class="btn btn-outline-primary">exit</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="js/chat.js"></script>
+</body>
+</html>
