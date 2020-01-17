@@ -13,6 +13,10 @@ $(function() {
 
     $("#exit").click( function() {
         confirm('Are you sure you want leave the queue?');  
-	});
+    });
+    
+    $("#next").click(function(){
+        //todo to next student
+    });
 });
 

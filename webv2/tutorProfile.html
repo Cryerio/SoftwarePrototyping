@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/studentProfile.css">
+    <title>tutor</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">DJHZJ</a>
+    </nav>
+    
+    <div class="container-fluid content">
+      <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a href="tutorProfile.html" type="button" class="list-group-item list-group-item-action active">Profile</a>
+                <a href="tutorsession.html" type="button" class="list-group-item list-group-item-action">Session</a>
+                <a href="tutorquestion.html" type="button" class="list-group-item list-group-item-action">Q&A</a>
+                <a href="logout.html" type="button" class="list-group-item list-group-item-action">Log out</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card">
+            <h5 class="card-header">Profile</h5>
+            <div class="card-body">
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Your changes have been saved.
+                <button id="close-alert" type="button" class="close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form>
+                <div class="form-group">
+                  <h6>Upload Avatar</h6>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              
+                  <hr />
+                  <h6>By which are you avaiable for the students:</h6>
+                  <select class="form-control">
+                    <option>audio call and screensharing</option>
+                    <option>only audio call</option>
+                    <option>only screensharing</option>
+                  </select>
+              </div>
+            </form>
+            </div>
+            <div class="card-footer text-right">
+              <button class="btn btn-primary" id="save">save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/tutorProfile.js"></script>
+  </body>
+</html>
