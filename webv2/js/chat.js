@@ -10,5 +10,9 @@ $(function() {
         $('#msgfield').val("");
     });
 
+
+    $("#exit").click( function() {
+        confirm('Are you sure you want leave the queue?');  
+	});
 });
 
